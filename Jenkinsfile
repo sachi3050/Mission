@@ -73,7 +73,7 @@ pipeline {
                 }
             }
         }
-        stage('Push Image to DockerHub') {
+        stage('Deployment using Docker') {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'Docker-Cred') {
